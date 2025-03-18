@@ -1,2 +1,2 @@
-# 5347
-Sample exam
+# USYD
+The courses of USYD
