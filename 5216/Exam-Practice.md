@@ -75,3 +75,32 @@ The primary function of a password is to prevent unauthorized individuals from a
 > “The **designer’s model** should be accurately communicated through the **system image**, so that the **user’s model** matches it.”
 
 # Exercise 3. React Native - General
+
+7、The Figure 3.1 shows an example how an app uses Context in React Native. **Context.Provider**
+
+indicates which component the context provider wraps. Please select the correct answer about
+
+which component can have access to the Shared Data Context.
+
+![Figure_3.1](D:\Environment\USYD\5216\Figure_3.1.png)
+
+(A)	Neither Login or Profile components can have access
+
+(B)	Only Profile component can have access
+
+(C)	Only _Layout(user) has access
+
+(D)	Can be access from Login component	✅
+
+```scss
+_Layout(app)
+ ├── _Layout(user) ← Context.Provider here
+ │    ├── Login
+ │    └── Register
+ └── _Layout(todos)
+      ├── Add Todo
+      ├── Todo
+      └── Profile
+
+```
+
