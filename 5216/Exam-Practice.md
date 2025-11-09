@@ -82,7 +82,7 @@ indicates which component the context provider wraps. Please select the correct 
 
 which component can have access to the Shared Data Context.
 
-![Figure_3.1](D:\Environment\USYD\5216\Figure_3.1.png)
+![Figure_3.1](.\Figure_3.1.png)
 
 (A)	Neither Login or Profile components can have access
 
