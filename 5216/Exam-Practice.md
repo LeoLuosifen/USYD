@@ -76,11 +76,7 @@ The primary function of a password is to prevent unauthorized individuals from a
 
 # Exercise 3. React Native - General
 
-7、The Figure 3.1 shows an example how an app uses Context in React Native. **Context.Provider**
-
-indicates which component the context provider wraps. Please select the correct answer about
-
-which component can have access to the Shared Data Context.
+7、The Figure 3.1 shows an example how an app uses Context in React Native. **Context.Provider** indicates which component the context provider wraps. Please select the correct answer about which component can have access to the Shared Data Context.
 
 ![Figure_3.1](./Figure_3.1.png)
 
@@ -163,3 +159,29 @@ Call Stack → MicroTask Queue → Task Queue
 - `setImmediate(callback)`（Node.js）
 - `I/O callbacks`
 - `UI rendering callbacks`
+
+
+
+# Exercise 5. package.json
+
+The code Listing-1 below shows an example package.json file of a project developed by a student. You can assume all the versions listed are accurate and all the necessary libraries are imported.
+
+![Listing_1](./Listing_1.png)
+
+12、Code Listing-1 has,
+
+(A) Errors
+
+(B) No errors	✅
+
+13、The project that has Listing-1 can be started with the command
+
+(A) npm start	✅
+
+(B) npm run start
+
+(C) npm run dependencies
+
+(D) npm install
+
+# Exercise 6. Using useState Hook
