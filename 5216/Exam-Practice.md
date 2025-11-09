@@ -104,3 +104,62 @@ _Layout(app)
 
 ```
 
+# Exercise 4. React Native - Architecture
+
+8、Shadow thread in React Native is responsible for:
+
+(A)	Event Handling
+
+(B)	Manage Layout	✅
+
+(C)	Processing style changes
+
+(D)	Rendering user interface
+
+
+
+![Figure_4.1](./Figure_4.1.png)
+
+9、All JS codes must run through:
+
+(A) Call Stack	✅
+
+(B) Task Queue
+
+(C) MicroTask Queue
+
+(D) None of the above
+
+>Whether it's synchronous code or asynchronous callbacks, they must ultimately enter the call stack to be executed.
+
+10、If all two queues and call stack has code to be executed, priority will be given to
+
+(A) Call Stack
+
+(B) Task Queue
+
+(C) MicroTask Queue	✅
+
+(D) None of the above
+
+```html
+Call Stack → MicroTask Queue → Task Queue
+```
+
+11、Task Queue will be used when:
+
+(A) There is a call back function	✅
+
+(B) Anything after an await
+
+(C) Promise is returned
+
+(D) None of the above
+
+### 🔹 A typical scenario for the Task Queue:
+
+- `setTimeout(callback, 0)`
+- `setInterval(callback, n)`
+- `setImmediate(callback)`（Node.js）
+- `I/O callbacks`
+- `UI rendering callbacks`
