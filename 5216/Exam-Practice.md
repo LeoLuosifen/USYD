@@ -10,6 +10,8 @@
 
 (D)	All of the above	✅
 
+
+
 2、What does password primarily contribute to in the CIA triad?
 
 (A)	Availability
@@ -28,6 +30,8 @@
 
 The primary function of a password is to prevent unauthorized individuals from accessing systems or information through an authentication mechanism, thereby safeguarding the confidentiality of information.
 
+
+
 # Exercise 2. Designing Mobile Applications
 
 3、The notifications should be designed carefully
@@ -42,11 +46,15 @@ The primary function of a password is to prevent unauthorized individuals from a
 
 ***to repeat as frequently*** ❌,  ***at any time of the day*** ❌, ***as much as information*** ❌
 
+
+
 4、McGurk effect is a good example of multimodal effects
 
 (A)	Yes	✅
 
 (B)	No
+
+
 
 5、To manage attention, it is important to design interfaces that have
 
@@ -59,6 +67,8 @@ The primary function of a password is to prevent unauthorized individuals from a
 (D)	the minimum amount of network data
 
 ***manage attention*** -> important information is **easily noticed**.
+
+
 
 6、In *Norman’s conceptual framework* :
 
@@ -118,39 +128,43 @@ _Layout(app)
 
 9、All JS codes must run through:
 
-(A) Call Stack	✅
+(A)	Call Stack	✅
 
-(B) Task Queue
+(B)	Task Queue
 
-(C) MicroTask Queue
+(C)	MicroTask Queue
 
-(D) None of the above
+(D)	None of the above
 
 >Whether it's synchronous code or asynchronous callbacks, they must ultimately enter the call stack to be executed.
 
+
+
 10、If all two queues and call stack has code to be executed, priority will be given to
 
-(A) Call Stack
+(A)	Call Stack
 
-(B) Task Queue
+(B)	Task Queue
 
-(C) MicroTask Queue	✅
+(C)	MicroTask Queue	✅
 
-(D) None of the above
+(D)	None of the above
 
 ```html
 Call Stack → MicroTask Queue → Task Queue
 ```
 
+
+
 11、Task Queue will be used when:
 
-(A) There is a call back function	✅
+(A)	There is a call back function	✅
 
-(B) Anything after an await
+(B)	Anything after an await
 
-(C) Promise is returned
+(C)	Promise is returned
 
-(D) None of the above
+(D)	None of the above
 
 ### 🔹 A typical scenario for the Task Queue:
 
@@ -170,18 +184,190 @@ The code Listing-1 below shows an example package.json file of a project develop
 
 12、Code Listing-1 has,
 
-(A) Errors
+(A)	Errors
 
-(B) No errors	✅
+(B)	No errors	✅
+
+
 
 13、The project that has Listing-1 can be started with the command
 
-(A) npm start	✅
+(A)	npm start	✅
 
-(B) npm run start
+(B)	npm run start
 
-(C) npm run dependencies
+(C)	npm run dependencies
 
-(D) npm install
+(D)	npm install
 
 # Exercise 6. Using useState Hook
+
+```typescript
+import React , { useState } from "react";
+import { Text , TextInput , View , Pressable } from "react-native";
+import { Link } from "expo-router";
+
+type Props = {};
+
+const Login = ( props : Props ) = > {
+	let [email , setEmail] = useState < string >( " " );
+	let password : string = " ";
+
+	function setPassword ( text : string ) {
+		password = text;
+	}
+	
+	return (
+    	<View style ={ styles.container }>
+        	<Text>Login with email: {email} and password: {password}</Text>
+
+			<TextInput 
+				placeholder = "Email"
+				placeholderTextColor = "#999"
+				onChangeText ={(text) => setEmail (text)}
+                value ={ email }
+			/>
+                    
+            <TextInput 
+				placeholder = "Password"
+				placeholderTextColor = "#999"
+				secureTextEntry
+				onChangeText ={(text) => setPassword (text)}
+                value ={ password }
+			/>
+                    
+            <Pressable>
+            	<Text>Sign In</Text>        
+            </Pressable>   
+        </View>
+    );
+};
+
+ export default Login;
+```
+
+The code shown in the Listing-2 is written by a student with the expectation of creating an interface that shows a login screen and a string display to show the user name and password the user like to use. You should read and evaluate the code listing, and answer the following questions. This code listing is only used for the questions under this exercise.
+
+
+
+14、The language in Listing-2 cab be best described as
+
+(A)	JavaScript
+
+(B)	TypeScript	✅
+
+
+
+15、In Listing-2, some imports is/are unnecessary
+
+(A)	Yes	✅
+
+(B)	No
+
+> import { Link } from "expo-router";
+
+
+
+16、Does this code create a component that will work with an accessibility screen reader?
+
+(A)	Yes
+
+(B)	No	✅
+
+```sql
+accessibilityLabel
+accessible={true}
+accessibilityRole（Such as, "button", "text", "header" ）
+```
+
+
+
+17、Could the Listing-2 lead to compilation errors?
+
+(A)	Yes	✅
+
+(B)	No
+
+```tsx
+let password: string = "";
+
+function setPassword(text: string) {
+  password = text;
+}
+
+// might lead to ESLint error
+```
+
+> “A component is changing an uncontrolled input of type text to be controlled.”
+
+
+
+18、According to the code in Listing-2, considering only the logic (assume if app errors exist, they
+
+were fixed), when user types name@email.com in the first TextInput, the Text element will
+
+display the text:
+
+(A)	Login with email: email and password: password
+
+(B)	Login with email: name@email.com and password: password
+
+(C)	Login with email: name@email.com and password:	✅
+
+(D)	Login with email: name@email.com and password: Password
+
+
+
+19、After typing name@email.com in the first TextInput, considering only the logic, if the user
+
+types 1234567 in the second TextInput, the Text element will display the text:
+
+(A)	Login with email: email and password: password
+
+(B)	Login with email: name@email.com and password: password
+
+(C)	Login with email: name@email.com and password:	✅
+
+(D)	Login with email: name@email.com and password: 1234567
+
+
+
+# Exercise 7. Using Networks and Peripherals
+
+20、Example(s) of a wide area network is/are
+
+(A)	WiFi
+
+(B)	5G	✅
+
+(C)	NFC
+
+(D)	BLE
+
+> wide area network -> WAN
+
+
+
+21、The best network for choice for an app that requires **high data transfer rate** with a **household**
+
+**smart device** is: 
+
+(A)	WiFi	✅
+
+(B)	5G
+
+(C)	NFC
+
+(D)	BLE
+
+
+
+22、A good example of ambient **light sensor** usage in a smartphone is
+
+(A)	Control the screen brightness adaptively	✅
+
+(B)	Adjust speaker volume with noise
+
+(C)	Pay bills by tapping the phone on a payment device
+
+(D)	Optical communication
