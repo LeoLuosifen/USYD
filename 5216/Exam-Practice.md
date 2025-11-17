@@ -302,9 +302,7 @@ function setPassword(text: string) {
 
 
 
-18、According to the code in Listing-2, considering only the logic (assume if app errors exist, they
-
-were fixed), when user types name@email.com in the first TextInput, the Text element will
+18、According to the code in Listing-2, considering only the logic (assume if app errors exist, they were fixed), when user types name@email.com in the first TextInput, the Text element will
 
 display the text:
 
@@ -318,9 +316,7 @@ display the text:
 
 
 
-19、After typing name@email.com in the first TextInput, considering only the logic, if the user
-
-types 1234567 in the second TextInput, the Text element will display the text:
+19、After typing name@email.com in the first TextInput, considering only the logic, if the user types 1234567 in the second TextInput, the Text element will display the text:
 
 (A)	Login with email: email and password: password
 
