@@ -118,7 +118,7 @@ _Layout(app)
 
 (B)	Manage Layout	✅
 
-(C)	Processing style changes
+(C)	Processing style changes	✅
 
 (D)	Rendering user interface
 
@@ -142,11 +142,11 @@ _Layout(app)
 
 10、If all two queues and call stack has code to be executed, priority will be given to
 
-(A)	Call Stack
+(A)	Call Stack	✅
 
 (B)	Task Queue
 
-(C)	MicroTask Queue	✅
+(C)	MicroTask Queue
 
 (D)	None of the above
 
@@ -184,9 +184,9 @@ The code Listing-1 below shows an example package.json file of a project develop
 
 12、Code Listing-1 has,
 
-(A)	Errors
+(A)	Errors	✅
 
-(B)	No errors	✅
+(B)	No errors
 
 
 
@@ -194,7 +194,7 @@ The code Listing-1 below shows an example package.json file of a project develop
 
 (A)	npm start	✅
 
-(B)	npm run start
+(B)	npm run start	✅
 
 (C)	npm run dependencies
 
